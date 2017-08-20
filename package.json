@@ -1,17 +1,25 @@
 {
-  "name": "evernote-solitaire-b",
+  "name": "evernote-solitaire",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "react-start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-scripts": "1.0.11",
     "body-parser": "~1.17.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
     "express": "~4.15.4",
-    "jade": "~1.11.0",
     "morgan": "~1.8.1",
     "serve-favicon": "~2.4.2"
-  }
+  },
+  "devDependencies": {},
+  "proxy": "http://localhost:3001"
 }
